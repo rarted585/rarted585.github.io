@@ -1,1 +1,143 @@
-hewo - kai
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>New Siren Archive</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+ body {
+   font-family: courier;
+  background: #fff5e8; 
+  } 
+
+.container{
+  width: 550px;
+  background-color:white;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top:100px;
+  border: 1px solid #fcba03;
+  height: 500px
+  overflow: auto;
+  }
+
+
+.tab {
+    list-style-type: none;
+    width:100px
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #f2f2f2;  
+    float:left;
+    height:300px
+}
+
+/* style the links */
+.tab p a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    font-variant:small-caps;
+
+}
+
+/* Change background color of links on hover */
+.tab p a:hover {
+    background-color: #ebb967;
+}
+
+/* Create an active/current tablink class */
+.tab p a:focus, .active {
+    background-color: #e39619;
+}
+
+/* style tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;    
+    border-top: none;
+    text-align:center;
+}
+    </style>
+  </head>
+  <body>
+<div class="container">
+
+<div class="tab">
+  <p><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Missouri')">Missouri</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Arkansas')">Arkansas</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Texas')">Texas</a></p>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Oklahoma')">Oklahoma</a></p>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Kansas')">Kansas</a></p>
+  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Illinois')">Illinois</a></p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About Me</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit erat vitae massa consectetur tempor. Donec vehicula cursus efficitur. Aliquam erat volutpat. Ut efficitur fermentum neque, vitae maximus libero varius id. Nunc at aliquam est, a rutrum lectus. Sed vitae sem sem. Sed tincidunt augue sagittis posuere tincidunt. Nunc tempus orci quis risus gravida, eu auctor diam feugiat. In nisl magna, suscipit ut bibendum sit amet, congue non erat. </p>
+  <p>Morbi lobortis pulvinar aliquet. Nunc nec massa at lectus suscipit consectetur. Duis faucibus nunc quis malesuada egestas. Aliquam et justo eu quam scelerisque sodales. Pellentesque pharetra eu lorem id interdum. Proin non ullamcorper erat. Cras eget condimentum odio, sodales dapibus urna. Morbi justo neque, feugiat in elementum in, vulputate at est. Sed viverra diam sit amet enim dictum, a sollicitudin libero posuere. Nam sollicitudin nisl sapien, vel egestas elit lacinia sit amet. Duis eu elit ut risus condimentum euismod ac et neque. Sed feugiat sapien libero, sed efficitur nulla gravida a.</p>
+</div>
+
+<div id="Missouri" class="tabcontent">
+  <h3>Missouri Sirens</h3>
+  <ul style="list-style-type:none;">
+  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+  <li>Integer suscipit erat vitae massa consectetur tempor.</li>
+  <li>Donec vehicula cursus efficitur.</li></ul>
+</div>
+
+<div id="Arkansas" class="tabcontent">
+  <h3>Arkansas Sirens</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Integer suscipit erat vitae massa consectetur tempor.</p>
+  <p> Donec vehicula cursus efficitur.</p>
+</div>
+<div id="Texas" class="tabcontent">
+  <h3>Texas Sirens</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Integer suscipit erat vitae massa consectetur tempor.</p>
+</div>
+  <div id="Oklahoma" class="tabcontent">
+  <h3>Oklahoma Sirens</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Integer suscipit erat vitae massa consectetur tempor.</p>
+</div>
+  <div id="Kansas" class="tabcontent">
+  <h3>Kansas Sirens</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Integer suscipit erat vitae massa consectetur tempor.</p>
+</div>
+  <div id="Illinois" class="tabcontent">
+  <h3>Illinois Sirens</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <p>Integer suscipit erat vitae massa consectetur tempor.</p>
+</div>
+</div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+  </body>
+</html>
