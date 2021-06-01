@@ -1,0 +1,76 @@
+ body {
+   font-family: courier;
+  background: #0a0700; 
+  } 
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffefcc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffd473;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ebc86a;
+}     
+      
+.container{
+  width: 1100px;
+  background-color:white;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top:25px;
+  margin-bottom:35px;
+  border: 1px solid #fcba03;
+  height: 700px;
+  overflow: auto;
+  }
+
+
+.tab {
+    list-style-type: none;
+    width:100px;a
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #0a0700;  
+    float: left;
+    height: 100%;
+}
+
+
+.tab p a {
+    display: block;
+    color: #ffc654;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    font-variant:small-caps;
+
+}
+
+
+.tab p a:hover {
+    background-color: #ffd47d;
+}
+
+.tab p a:focus, .active {
+    background-color: #bd8500;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 12px 12px;    
+    border-top: none;
+    text-align:center;
+}
