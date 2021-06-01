@@ -74,3 +74,7 @@
     border-top: none;
     text-align:center;
 }
+
+#credits {
+ list-style: square;
+}
