@@ -191,6 +191,17 @@
   <div class="desc"> El Dorado Springs, Arkansas | 2021 | Armoturo </div>
 </div> 
   
+<div id="14vb">  <audio id="14vb">
+  <source src="14vb_attack.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p>Click the buttons to play or pause. Recorded April 21st 2021. First test is El Dorado's new Sentry system. </p>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+  </div>
+  
 </div> 
   
 <div id="Texas" class="tabcontent">
@@ -273,6 +284,17 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+  
+  var x = document.getElementById("14vb"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+  
 </script>
   </body>
 </html>
