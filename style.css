@@ -70,7 +70,8 @@
 
 .tabcontent {
     display: none;
-    padding: 12px 12px;    
+    padding: 12px 12px;
+    margin-left: 2px;
     border-top: none;
     text-align:center;
 }
