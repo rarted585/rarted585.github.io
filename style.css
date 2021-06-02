@@ -129,8 +129,8 @@ div.desc {
 .audio {
   width: 300px;
   height: 150px;
-  padding: 3px;
-  margin: 2px;
+  padding: 5px;
+  margin: 4px;
   overflow: auto;
   border-style: solid;
   border-width: 3px;
