@@ -104,7 +104,7 @@
 /* GALLERIES */
 
 div.gallery {
-  margin: 5px;
+  margin: 3px;
   border: 1px solid #ccc;
   float: left;
   width: 180px;
@@ -120,7 +120,7 @@ div.gallery img {
 }
 
 div.desc {
-  padding: 10px;
+  padding: 8px;
   text-align: center;
   font-size: 80%;
 }
