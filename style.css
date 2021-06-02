@@ -91,17 +91,6 @@
   font-size: 14px;
 }
 
-.14vb {
-  overflow: auto;
-  border-style: solid;
-  border-color: #e09f12;
-  border-width: 3px;
-  width: 200px;
-  height: 200px;
-  paddng: 3px;
-  margin: 2px;
-}
-
 /* GALLERIES */
 
 div.gallery {
