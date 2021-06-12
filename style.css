@@ -94,10 +94,10 @@
 /* GALLERIES */
 
 div.gallery {
-  margin: 3px;
+  margin: 2.5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 175px;
 }
 
 div.gallery:hover {
